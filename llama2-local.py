@@ -1,4 +1,4 @@
-from llama_cpp import Llama 
+from llama_cpp import Llama
 import timeit
 
 # Load Llama 2 model
@@ -28,5 +28,5 @@ print(output['choices'][0]['text'])
 
 # Write to file
 with open("response.txt", "a") as f:
-  f.write(f"Time: {duration}")
-  f.write(output['choices'][0]['text'])
+    f.write(f"Time: {duration}")
+    f.write(output['choices'][0]['text'])
